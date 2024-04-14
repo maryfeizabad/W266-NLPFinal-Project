@@ -1,0 +1,127 @@
+-----Below are sample summaries generated with the following settings:----
+name: e_lm_longformer_8k_abstr
+investigation_name: large led 8K configuration sweep 4 with 2200 steps 1.77 epochs
+base_model: allenai/led-large-16384
+token_strategy: None
+freeze_layers: no
+validation_data_size: 100
+strategy: Abstraction
+load_dir: /content/drive/MyDrive/W266_NLP/Project2/summarization/e_l_longformer_8k_plain3/checkpoint-2200/
+csv_file_path: /content/drive/MyDrive/W266_NLP/Project2/summarization/generation_trials/e_lm_longformer_8k_abstr-2200.csv
+----Range of values for each hyperparameter------------
+num_beams_values: [5, 6, 7]
+length_penalty_values: [1.0, 2.0, 3.0]
+early_stopping_values: [False]
+no_repeat_ngram_size_values: [3]
+# Calculate the total number of iterations
+
+------------------Sample 0-----------------------
+---num_beams: 5 --length_penalty: 1.0 --early_stopping: False --no_repeat_ngram_size: 3
+------------------Generated Summary------------------------
+There was no evidence of a significant effect of glucomannan on body weight loss, body fatness, body composition, or body weight change in overweight/obese subjects.
+CONCLUSIONS There is insufficient evidence to support or refute the use of any particular type of fiber in the treatment of hyperglycemia in overweight or obese subjects.
+------------------Original Summary------------------------
+The use of glucomannan did not appear to significantly alter any other study endpoints .
+Pediatric patients , patients receiving dietary modification , and patients with impaired glucose metabolism did not benefit from glucomannan to the same degree .
+Glucomannan appears to beneficially affect total cholesterol , LDL cholesterol , triglycerides , body weight , and FBG , but not HDL cholesterol or BP
+
+------------------Sample 1-----------------------
+---num_beams: 5 --length_penalty: 2.0 --early_stopping: False --no_repeat_ngram_size: 3
+------------------Generated Summary------------------------
+There was no evidence of a significant effect of glucomannan on body weight loss, body fatness, body composition, or body weight change in overweight/obese subjects.
+CONCLUSIONS There is insufficient evidence to support or refute the use of any particular type of fiber in the treatment of type 2 diabetes mellitus.
+However, there is some evidence that the addition of soluble fiber to a CRD may have a small but significant effect on weight loss and body weight reduction.
+There is no evidence to suggest that it is better to use soluble fiber as an adjunctive treatment for weight loss than to use it as an adjunct to a diet or exercise regimen alone.
+The use of soluble fibre in combination with a diet, exercise regimen, or combination of a diet and a pharmacological treatment may be beneficial for weight reduction and /or body weight control.
+It is not clear whether soluble fiber is more effective than a diet alone.
+------------------Original Summary------------------------
+The use of glucomannan did not appear to significantly alter any other study endpoints .
+Pediatric patients , patients receiving dietary modification , and patients with impaired glucose metabolism did not benefit from glucomannan to the same degree .
+Glucomannan appears to beneficially affect total cholesterol , LDL cholesterol , triglycerides , body weight , and FBG , but not HDL cholesterol or BP
+
+------------------Sample 2-----------------------
+---num_beams: 5 --length_penalty: 3.0 --early_stopping: False --no_repeat_ngram_size: 3
+------------------Generated Summary------------------------
+There was no evidence of a significant effect of glucomannan on body weight loss, body fatness, body composition, or body weight change in overweight/obese subjects.
+CONCLUSIONS There is insufficient evidence to support or refute the use of any particular type of fiber in the treatment of type 2 diabetes mellitus.
+However, there is some evidence that the addition of soluble fiber to a CRD may have a small but significant effect on weight loss and body weight reduction.
+There is no evidence to suggest that it is better to use soluble fiber as an adjunctive treatment for weight loss than to use it as an adjunct to a diet or exercise regimen alone.
+The use of soluble fibre in combination with a diet, exercise regimen, or combination of a diet and a pharmacological treatment may be beneficial for weight reduction and /or body weight control.
+It is not clear whether soluble fiber is more effective than a diet alone.
+------------------Original Summary------------------------
+The use of glucomannan did not appear to significantly alter any other study endpoints .
+Pediatric patients , patients receiving dietary modification , and patients with impaired glucose metabolism did not benefit from glucomannan to the same degree .
+Glucomannan appears to beneficially affect total cholesterol , LDL cholesterol , triglycerides , body weight , and FBG , but not HDL cholesterol or BP
+
+------------------Sample 3-----------------------
+---num_beams: 6 --length_penalty: 1.0 --early_stopping: False --no_repeat_ngram_size: 3
+------------------Generated Summary------------------------
+The results of this systematic review and meta- analysis suggest that the use of glucomannan as an adjunctive treatment for hyperglycemia in overweight/obese children may be effective in reducing blood glucose and lowering LDL-C and HDL-C.
+------------------Original Summary------------------------
+The use of glucomannan did not appear to significantly alter any other study endpoints .
+Pediatric patients , patients receiving dietary modification , and patients with impaired glucose metabolism did not benefit from glucomannan to the same degree .
+Glucomannan appears to beneficially affect total cholesterol , LDL cholesterol , triglycerides , body weight , and FBG , but not HDL cholesterol or BP
+
+------------------Sample 4-----------------------
+---num_beams: 6 --length_penalty: 2.0 --early_stopping: False --no_repeat_ngram_size: 3
+------------------Generated Summary------------------------
+The results of this systematic review and meta- analysis suggest that the use of glucomannan as an adjunctive treatment for hyperglycemia in overweight/obese children may be effective in reducing blood glucose and lowering LDL-C and HDL-C.
+However, it is still premature to make any definitive statements on the effectiveness of this intervention in this population.
+There is currently no evidence to support its use as an adjunct to diet or exercise in the treatment of hyperglycaemia in overweight or obese children.
+The use of a combination of soluble fiber with a CRD seems to be more likely to result in weight loss than a single dose of soluble fibre alone.
+In conclusion, there is insufficient evidence from r and omized controlled trials to support the routine use of soluble fibres in the long-term treatment of overweight and obesity in overweight and obese children and adolescents.
+It is therefore not possible to make a definitive statement
+------------------Original Summary------------------------
+The use of glucomannan did not appear to significantly alter any other study endpoints .
+Pediatric patients , patients receiving dietary modification , and patients with impaired glucose metabolism did not benefit from glucomannan to the same degree .
+Glucomannan appears to beneficially affect total cholesterol , LDL cholesterol , triglycerides , body weight , and FBG , but not HDL cholesterol or BP
+
+------------------Sample 5-----------------------
+---num_beams: 6 --length_penalty: 3.0 --early_stopping: False --no_repeat_ngram_size: 3
+------------------Generated Summary------------------------
+The results of this systematic review and meta- analysis suggest that the use of glucomannan as an adjunctive treatment for hyperglycemia in overweight/obese children may be effective in reducing blood glucose and lowering LDL-C and HDL-C.
+However, it is still premature to make any definitive statements on the effectiveness of this intervention in this population.
+There is currently no evidence to support its use as an adjunct to diet or exercise in the treatment of hyperglycaemia in overweight or obese children.
+The use of a combination of soluble fiber with a CRD seems to be more likely to result in weight loss than a single dose of soluble fibre alone.
+In conclusion, there is insufficient evidence from r and omized controlled trials to support the routine use of soluble fibres in the long-term treatment of overweight and obesity in overweight and obese children and adolescents.
+It is therefore not possible to make a definitive statement
+------------------Original Summary------------------------
+The use of glucomannan did not appear to significantly alter any other study endpoints .
+Pediatric patients , patients receiving dietary modification , and patients with impaired glucose metabolism did not benefit from glucomannan to the same degree .
+Glucomannan appears to beneficially affect total cholesterol , LDL cholesterol , triglycerides , body weight , and FBG , but not HDL cholesterol or BP
+
+------------------Sample 6-----------------------
+---num_beams: 7 --length_penalty: 1.0 --early_stopping: False --no_repeat_ngram_size: 3
+------------------Generated Summary------------------------
+The results of this systematic review and meta- analysis suggest that the use of glucomannan as an adjunctive treatment for hyperglycemia in overweight/obese children is safe and effective.
+------------------Original Summary------------------------
+The use of glucomannan did not appear to significantly alter any other study endpoints .
+Pediatric patients , patients receiving dietary modification , and patients with impaired glucose metabolism did not benefit from glucomannan to the same degree .
+Glucomannan appears to beneficially affect total cholesterol , LDL cholesterol , triglycerides , body weight , and FBG , but not HDL cholesterol or BP
+
+------------------Sample 7-----------------------
+---num_beams: 7 --length_penalty: 2.0 --early_stopping: False --no_repeat_ngram_size: 3
+------------------Generated Summary------------------------
+The results of this systematic review and meta- analysis suggest that the use of glucomannan as an adjunctive treatment for hyperglycemia in overweight/obese children may be effective in reducing blood glucose and lowering LDL-C.
+However, there is currently no evidence to support its use as an adjunct to diet or exercise in the treatment of hyperglycaemia in children and adolescents.
+There is no evidence that it is beneficial to use it as an add-on treatment to diet alone or as a supplement to exercise alone.
+It is therefore not possible to make any definitive statements on whether or not it is better to use a combination of diet and exercise alone or in addition to diet to reduce blood glucose or triglycerides in children or adolescents or adults.
+In general, the evidence suggests that there is insufficient evidence to recommend that the addition of diet to a CRD may be beneficial for children or adults with obesity or hypergly
+------------------Original Summary------------------------
+The use of glucomannan did not appear to significantly alter any other study endpoints .
+Pediatric patients , patients receiving dietary modification , and patients with impaired glucose metabolism did not benefit from glucomannan to the same degree .
+Glucomannan appears to beneficially affect total cholesterol , LDL cholesterol , triglycerides , body weight , and FBG , but not HDL cholesterol or BP
+
+------------------Sample 8-----------------------
+---num_beams: 7 --length_penalty: 3.0 --early_stopping: False --no_repeat_ngram_size: 3
+------------------Generated Summary------------------------
+The results of this systematic review and meta- analysis suggest that the use of glucomannan as an adjunctive treatment for hyperglycemia in overweight/obese children may be effective in reducing blood glucose and lowering LDL-C.
+However, there is currently no evidence to support its use as an adjunct to diet or exercise in the treatment of hyperglycaemia in children and adolescents.
+There is no evidence that it is beneficial to use it as an add-on treatment to diet alone or as a supplement to exercise alone.
+It is therefore not possible to make any definitive statements on whether or not it is better to use a combination of diet and exercise alone or in addition to diet to reduce blood glucose or triglycerides in children or adolescents or adults.
+In general, the evidence suggests that there is insufficient evidence to recommend that the addition of diet to a CRD may be beneficial for children or adults with obesity or hypergly
+------------------Original Summary------------------------
+The use of glucomannan did not appear to significantly alter any other study endpoints .
+Pediatric patients , patients receiving dietary modification , and patients with impaired glucose metabolism did not benefit from glucomannan to the same degree .
+Glucomannan appears to beneficially affect total cholesterol , LDL cholesterol , triglycerides , body weight , and FBG , but not HDL cholesterol or BP
+
